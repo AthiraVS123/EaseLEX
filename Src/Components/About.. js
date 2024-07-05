@@ -1,0 +1,45 @@
+import React from "react";
+import Child from "../Assets/imgdys.jpeg";
+import SolutionStep from "./SolutionStep";
+import "../Styles/About.css";
+
+function About() {
+  return (
+    <div className="about-section" id="about">
+      <div className="about-image-content">
+        <img src={Child} alt="Doctor Group" className="about-image1"
+        style={{ height: 450, width: 450, borderRadius: 800 / 2}} />
+        
+      </div>
+
+      <div className="about-text-content">
+        <h3 className="about-title">
+          About Us
+        </h3>
+        <p className="about-description">
+        Explore the world of dyslexia with us as we unravel its mysteries, 
+        dispel myths, and gain insights into its diverse experiences, strengths, and challenges
+        </p>
+
+        <h4 className="about-text-title">You Can:</h4>
+
+        <SolutionStep
+          title="Detect Dyslexia"
+          description="Identify your challenges in reading, writing and spelling through comprehensive assessment."
+        />
+
+        <SolutionStep
+          title="Improve cognitive skills"
+          description="Improve cognitive skills and language abilities through continuous learning."
+        />
+
+        <SolutionStep
+          title="Assess yourself"
+          description="Regularly evaluate the learning progress and identify the areas for improvement ."
+        />
+      </div>
+    </div>
+  );
+}
+
+export default About;
